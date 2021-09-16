@@ -85,6 +85,8 @@ public class SeleniumDemoTest {
 		payment.click();
 		WebElement confirm = this.driver.findElementByCssSelector("button.button-medium > span:nth-child(1)");
 		confirm.click();
+		WebElement confirmation = this.driver.findElementByCssSelector("#center_column > div > p > strong");
+		assertEquals("Your order on My Store is complete.", confirmation.getText());
 
 	}
 
