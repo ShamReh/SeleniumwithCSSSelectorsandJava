@@ -31,6 +31,7 @@ public class SeleniumDemoTest {
 		currentadd.sendKeys("Address");
 		WebElement permadd = this.driver.findElementByCssSelector("#permanentAddress");
 		permadd.sendKeys("This is my home");
+		this.driver.executeScript("window.scrollBy(0,350)", "");
 		WebElement submitButton = this.driver.findElementByCssSelector("#submit");
 		submitButton.click();
 
